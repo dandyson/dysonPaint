@@ -1,0 +1,105 @@
+
+
+/* BODY */
+
+body {
+    color: white;
+    background-color: #7400db;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Top title*/
+
+.top {
+    display: grid;
+    justify-content: center;
+}
+
+.top h1 {
+    font-size: 5em;
+}
+
+/*Canvas*/
+
+.canvasDiv {
+    display: grid;
+    grid-template-columns: 10% 80% ;
+}
+
+canvas {
+    background-color: white;
+    margin: 0 auto;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 50px;
+    border: 15px solid black;
+}
+
+/* Colors */
+
+.colors {
+    display: grid;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.colorSquares {
+    transition: all 0.12s ease-in-out;
+    cursor: pointer;
+    border-radius: 50%;;
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: green;
+}
+
+.colorSquares:hover {
+    transform: scale(1.2);
+}
+
+/** Draw settings **/
+
+.drawSettings {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/** Brush styles **/
+
+.clearDiv {
+width: 100%;
+display: flex;
+justify-content: center;
+grid-column-start: 1;
+grid-column-end: 4;
+}
+
+#clear {
+    transition: all 0.12s ease-in-out;
+    cursor: pointer;
+    -webkit-box-shadow: -9px 10px 25px -2px rgba(0,0,0,0.57);
+-moz-box-shadow: -9px 10px 25px -2px rgba(0,0,0,0.57);
+box-shadow: -9px 10px 25px -2px rgba(0,0,0,0.57);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    margin: 5px;
+    width: 300px;
+    height: 65px;
+}
+
+#clear:hover {
+    transform: scale(1.2);
+}
+
+/** MEDIA QUERIES FOR DESKTOP **/
+@media only screen and (min-width: 990px) {
+
+}
